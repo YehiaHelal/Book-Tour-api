@@ -16,12 +16,6 @@ const createUser_post = async (req, res) => {
   // name
   // here we are using de-structing assigning name and email and password to , from the request body we got.
 
-  if (password.lenth < 6) {
-    return res
-      .status(400)
-      .json({ error: "Minimum password length is 6 characters", emptyFields });
-  }
-
   let emptyFields = [];
 
   // if (!name) {

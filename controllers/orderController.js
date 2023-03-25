@@ -23,7 +23,7 @@ const cartOrder_post = async (req, res) => {
       numberofitems,
     });
 
-    console.log(order);
+    // console.log(order);
 
     res.status(200).json({ message: "order placed and on it's way" });
   } catch (error) {
@@ -54,7 +54,7 @@ const getuserorders_post = async (req, res) => {
   // }
 };
 
-// get all orders
+//get all orders for all users
 const getOrders_post = async (req, res) => {
   const orders = await Order.find({}).sort({});
 

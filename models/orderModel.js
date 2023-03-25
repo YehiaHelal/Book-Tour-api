@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const orderSchema = new Schema(
   {
-    orderProducts: { type: [], required: true },
+    orderProducts: { type: [String], required: true },
     orderTotalValue: { type: Number, required: true },
     user: { type: String, required: true },
     numberofitems: { type: [] },

@@ -37,7 +37,7 @@ app.use(cookieParser()); // To parse the incoming cookies
 app.use(
   cors({
     credentials: true,
-    origin: "https://book-tour-frontend-production.up.railway.app",
+    origin: "https://book-tour-frontend.vercel.app",
   })
 );
 
